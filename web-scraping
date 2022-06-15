@@ -1,0 +1,23 @@
+import string
+import requests
+import BeautifulSoup
+url = "http://itexotics.com"
+#step : Get the HTML
+r = request.get(url)
+htmlContent = r.content
+print(htmlContent)
+
+#step2: Parse the HTML
+soup = BeautifulSoup(htmlcontent, 'html.parser')
+print(soup.prettify)
+
+#Step3: Html Tree traversal
+title =soup.title
+print (type(title.string))
+# 1.Tag
+
+#3. NavigaleString
+#4. Comment
+title =soup.title
+print (type(title.string))
+
